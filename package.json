@@ -1,0 +1,22 @@
+{
+  "name": "app-empleados",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon backend/index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "D": "^1.0.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10"
+  }
+}
