@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "5ac014ac-9b71-4776-aa34-e3dc21b629a7",
+		"name": "bd-empleados",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24119186"
+	},
+	"item": [
+		{
+			"name": "Listar empleados",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar empleado id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/68365ac03eae30c88cd9d436",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"68365ac03eae30c88cd9d436"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear empelado",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Faustino Asprilla\",\r\n    \"cargo\": \"Delantero\",\r\n    \"sucursal\": \"Buenaventura\",\r\n    \"salario\": 500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/empleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar empelado",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Faustino Asprilla\",\r\n    \"cargo\": \"Delantero\",\r\n    \"sucursal\": \"Tulua\",\r\n    \"salario\": 500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/68365ac03eae30c88cd9d436",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"68365ac03eae30c88cd9d436"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar empleado id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/empleados/682d42d3837314c2766c59d1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleados",
+						"682d42d3837314c2766c59d1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
