@@ -1,4 +1,4 @@
-# 📋 App Empleados
+# 📋 App Gestion Empleados
 
 Aplicación web full-stack desarrollada con Angular (frontend) y Node.js + Express + MongoDB (backend), que permite gestionar un registro de empleados.
 
